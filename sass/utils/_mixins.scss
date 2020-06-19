@@ -7,15 +7,18 @@
   line-height: $flh;
   letter-spacing: $fls;
 }
+@mixin margin($mt, $mb) {
+  margin-top: $mt;
+  margin-bottom: $mb;
+}
 // footer
 @mixin footer-font($fs, $flh) {
   font-size: $fs;
   line-height: $flh;
 }
-@mixin icon-btn($w, $h, $ml) {
+@mixin icon-size($w, $h) {
   width: $w;
   height: $h;
-  margin-left: $ml;
 }
 @mixin slikns($fw, $fs, $flh) {
   font-weight: $fw;

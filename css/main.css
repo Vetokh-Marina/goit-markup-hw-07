@@ -283,7 +283,7 @@ summary {
           align-items: center;
 }
 
-.list, .advant {
+.list, .advant, .advant-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -737,6 +737,10 @@ footer {
   margin-right: 30px;
 }
 
+.list .advant-element {
+  width: calc((100% - 30px * 3) / 4);
+}
+
 .advant-item {
   background-color: #f5f4fa;
   height: 120px;
@@ -746,7 +750,16 @@ footer {
           justify-content: center;
 }
 
-.advant .advant-title {
+.advant-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.advant.advant-title {
   margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
@@ -754,24 +767,17 @@ footer {
   line-height: 1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--title-text-color);
-}
-
-.advant-text {
-  margin-top: 0;
-  margin-bottom: 0px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-}
-
-.advant-element:not(:last-child) {
-  margin-right: 30px;
+  color: #212121;
 }
 
 .icon-advant {
   width: 70px;
   height: 70px;
+}
+
+.list.advant-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */
