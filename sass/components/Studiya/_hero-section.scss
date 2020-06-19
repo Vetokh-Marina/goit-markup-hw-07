@@ -1,0 +1,52 @@
+.hero {
+  background-color: $hero-color;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  &-item {
+    @extend %item-centr;
+    padding-top: 200px;
+    text-align: center;
+  }
+
+  &-title {
+    @extend %item-centr;
+    width: 646px;
+    margin-top: 0;
+    margin-bottom: 46px;
+    @include fonts(900, 44px, 1.36, 0.06em);
+    text-transform: uppercase;
+    color: $white-color;
+  }
+}
+//Фон с градиентом в секции герой
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  @extend %item-centr;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url('../img/studiya/header_img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.button.primary {
+  border: none;
+  @extend %inline-flex;
+  @include fonts(700, 16px, 1.87, 0.06em);
+  color: $white-color;
+  background-color: $accent-text-color;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  @include tranzition(all);
+  &:hover {
+    background-color: $white-color;
+    color: $accent-text-color;
+  }
+}

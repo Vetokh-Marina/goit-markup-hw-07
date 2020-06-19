@@ -5,8 +5,12 @@
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-%flex {
+%inline-flex {
   display: inline-flex;
+  align-items: center;
+}
+%flex {
+  display: flex;
   align-items: center;
 }
 %icons-size {
@@ -17,4 +21,9 @@
 %icon {
   width: 20px;
   height: 20px;
+}
+
+%item-centr {
+  margin-left: auto;
+  margin-right: auto;
 }

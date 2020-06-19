@@ -126,6 +126,7 @@ footer {
     fill: $accent-text-color;
   }
   .icon-button {
+    margin-left: 10px;
     fill: $white-color;
     @include tranzition(fill);
     :hover &,
