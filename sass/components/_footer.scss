@@ -26,8 +26,7 @@ footer {
 }
 // контакты футера
 .add {
-  margin-top: 0;
-  margin-bottom: 9px;
+  @include margin(0, 9px);
   &-link {
     display: inline-block;
     @include tranzition(color);
@@ -49,7 +48,7 @@ footer {
   padding: 10px 58px 10px 12px;
   border-radius: 4px;
   border-style: solid;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  @include bordered(rgba(255, 255, 255, 0.3));
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: $footer-color;
   border-image: initial;
@@ -59,8 +58,7 @@ footer {
 }
 .copyringht {
   color: $copyring;
-  margin-top: 0;
-  margin-bottom: 0;
+  @include margin(0, 0);
   padding-top: 18px;
   padding-bottom: 21px;
   @include footer-font(12px, 2);
@@ -77,10 +75,10 @@ footer {
 .slikns-list {
   display: flex;
   .icon-slinks {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    @extend %icons-size;
+    @extend %flex;
+    @include icon-size(44px, 44px);
+    border-radius: 50%;
     background-color: $icon-color;
     @include tranzition(all);
     fill: $white-color;
@@ -98,7 +96,7 @@ footer {
   }
 }
 .icon-slink {
-  @extend %icon;
+  @include icon-size(20px, 20px);
 }
 .slikns-text {
   margin-bottom: 21px;
@@ -133,7 +131,6 @@ footer {
   fill: $accent-text-color;
 }
 .icon-button {
-  width: 24px;
-  height: 24px;
+  @include icon-size(20px, 20px);
   margin-left: 10px;
 }
