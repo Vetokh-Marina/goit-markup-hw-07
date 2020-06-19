@@ -274,7 +274,7 @@ summary {
   text-decoration: none;
 }
 
-.cont-nav, .button.primary {
+.cont-nav, .button-secondary, .button.primary {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -521,7 +521,7 @@ footer {
 }
 
 .email-input {
-  margin-top: 0px 0px 12px;
+  margin: 0px 12px 0px;
   color: #ffffff;
   font-size: 16px;
   line-height: 1.87;
@@ -623,21 +623,21 @@ footer {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #ffffff;
   background-color: #2196f3;
   text-decoration: none;
   border-radius: 4px;
   margin-bottom: 50px;
   padding: 10px 29px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   min-width: 200px;
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-secondary .icon-button {
+  fill: #ffffff;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-secondary:hover, .button-secondary:focus {
@@ -646,16 +646,14 @@ footer {
   fill: #2196f3;
 }
 
-.button-secondary .icon-button {
-  margin-left: 10px;
-  fill: #ffffff;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.button-secondary:hover .icon-button {
+  fill: #2196f3;
 }
 
-:hover .button-secondary .icon-button,
-:focus .button-secondary .icon-button {
-  fill: #2196f3;
+.icon-button {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 }
 
 .hero {
