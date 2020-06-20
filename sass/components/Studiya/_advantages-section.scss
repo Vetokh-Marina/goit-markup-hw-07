@@ -3,7 +3,7 @@
   @extend %flex;
   flex-wrap: wrap;
 }
-.section h2 {
+.section-title {
   margin: 0 0 50px;
   @include fonts(700, 36px, 1.2, 0.03em);
   text-align: center;
