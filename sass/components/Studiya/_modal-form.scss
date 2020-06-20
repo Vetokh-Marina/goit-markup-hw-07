@@ -99,7 +99,7 @@
       color: $accent-text-color;
       transform: translate(-26px, -32px) scale(0.86);
       @include tranzition(transform);
-      @include tranzition(color);
+      @include tranzition(all);
     }
     & ~ .icon-input {
       fill: $accent-text-color;
